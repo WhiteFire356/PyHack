@@ -1,4 +1,4 @@
-from exploits.geckoX import *
+from exploit import *
 import os
 
 def list_files():
@@ -7,10 +7,18 @@ def list_files():
 
 
 while True:
+    tmp = sp.call('cls',shell=True)
     list_files()
   
-    func = input('Enter an exploit name: ')
-    if func == 'geckoX':
+    f = input('Enter an exploit name: ')
+    if f == 'geckoX':
         geckoX()
+    elif f == 'dwrite':
+        dwrite()
+    elif f == 'dreada':
+        dreada()
+    elif f == 'dbread':
+        dbread()
     else:
         print('unable to find that exploit.')
+    tmp = sp.call('pause',shell=True)

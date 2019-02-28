@@ -17,8 +17,8 @@ while True:
         dwrite()
     elif f == 'dreada':
         dreada()
-    elif f == 'dbread':
-        dbread()
+    elif f == 'db':
+        db()
     else:
         print('unable to find that exploit.')
     tmp = sp.call('pause',shell=True)

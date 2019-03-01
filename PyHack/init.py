@@ -19,6 +19,8 @@ while True:
         dreada()
     elif f == 'db':
         db()
+    elif f == 'update':
+        update()
     else:
         print('unable to find that exploit.')
     tmp = sp.call('pause',shell=True)
